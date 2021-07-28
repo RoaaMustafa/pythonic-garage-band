@@ -1,5 +1,8 @@
 from abc import ABC, abstractmethod
 class Musician(ABC):
+    """
+    Musician Class
+    """
     members = []
     
     def __init__(self, name):
@@ -42,6 +45,9 @@ class Guitarist(Musician):
     
     
 class Drummer(Musician):
+    """
+    Drummer Class
+    """
     def __str__(self):
         return (f"My name is {self.name} and I play drums")
     
@@ -55,17 +61,20 @@ class Drummer(Musician):
         return ('drums')
 
 class Bassist(Musician):
+    """
+    Bassist Class
+    """
     def __str__(self):
         return (f"My name is {self.name} and I play bass")
     
     def __repr__(self):
         return (f'Bassist instance. Name = {self.name}')
 
-    def play_solo(self):
-        return ("bom bom buh bom")
-
     def get_instrument(self):
         return ('bass')
+    
+    def play_solo(self):
+        return ("bom bom buh bom")
     
     
 class Band(Musician):
