@@ -24,6 +24,9 @@ def play_solo():
     
     
 class Guitarist(Musician):
+    """
+    Guitarist Class
+    """
     def __str__(self):
         return (f"My name is {self.name} and I play guitar")
     
